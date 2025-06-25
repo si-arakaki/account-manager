@@ -1,0 +1,16 @@
+{
+  "name": "account-manager",
+  "dockerComposeFile": [
+    "compose.yaml"
+  ],
+  "service": "app",
+  "remoteUser": "vscode",
+  "workspaceFolder": "/home/vscode/github.com/si-arakaki/account-manager",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+services:
+  app:
+    image: github.com/si-arakaki/account-manager
+    build:
+      context: ..
+      dockerfile: ./.devcontainer/Dockerfile
+    container_name: account-manager-app
+    command: sleep infinity
+    volumes:
+      - ..:/home/vscode/github.com/si-arakaki/account-manager
+      - ./.account:/home/vscode/.account
+    env_file:
+      - .env
